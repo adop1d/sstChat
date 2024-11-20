@@ -19,7 +19,7 @@ public class chatClient extends JFrame {
 	final String userNick;
 	public chatClient(String userNick){
 
-		setTitle("cliente");
+		setTitle("client");
 		setBounds(600,300,364,300);
 		panelFrameClient frame_a =new panelFrameClient(userNick);
 		add(frame_a);
