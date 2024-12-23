@@ -55,7 +55,7 @@ class loginPanel extends JPanel{
         passKey.getDocument().addDocumentListener(Evvt1);
 
         emailField reportLogin =new emailField();
-        JButton sendButton =new JButton("send");
+        JButton sendButton =new JButton(new ImageIcon("src/main/java/org/beast/addpersonalb/ico/log1n.jpg"));
         sendButton.addActionListener(reportLogin);
 
         text2.setBounds(56,22,80,20);
@@ -64,7 +64,7 @@ class loginPanel extends JPanel{
         textFieldLog.setBounds(90,20,130,30);
         passKey.setBounds(90,48,130,30);
         resultant.setBounds(80,90,180,40);
-        sendButton.setBounds(80,125,100,20);
+        sendButton.setBounds(90,125,80,28);
 
         textFieldLog.setForeground(new Color(200,200,200));
         passKey.setForeground(new Color(200,200,200));
