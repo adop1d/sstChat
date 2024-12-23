@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class guiPersonalSharing extends JFrame {
-    public guiPersonalSharing(JButton MCAR){
+    public guiPersonalSharing(){
         setTitle("vete u.u");
         setBounds(600,280,180,100);
         setLocationRelativeTo(this);
@@ -18,7 +18,7 @@ public class guiPersonalSharing extends JFrame {
         setVisible(true);
 
         MCAR ButtFechar =new MCAR();
-        MCAR.addActionListener(ButtFechar);
+        //MCAR.addActionListener(ButtFechar);
     }
     private class MCAR implements ActionListener {
         public void actionPerformed(ActionEvent e) {

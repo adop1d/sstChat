@@ -11,8 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class guiLoginFrame extends JFrame {
-    public guiLoginFrame(JButton close){
-        setTitle("log-in");
+    public guiLoginFrame(){
         setBounds(600,200,280,180);
         setLocationRelativeTo(this);
         loginPanel aPanel =new loginPanel();
@@ -22,7 +21,7 @@ class guiLoginFrame extends JFrame {
         setResizable(true);
 
         disposeAction Actio=new disposeAction();
-        close.addActionListener(Actio);
+        //close.addActionListener(Actio);
     }
     private class disposeAction implements ActionListener {
         public void actionPerformed(ActionEvent e) {

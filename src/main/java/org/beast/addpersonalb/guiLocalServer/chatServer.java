@@ -13,7 +13,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class chatServer {
-	public static void main() {
+	public static void main(String[] args) {
 		serverFrame server=new serverFrame();
 		server.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}	

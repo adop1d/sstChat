@@ -34,15 +34,15 @@ public class guiPrincipal extends JFrame {
             emergent.add(opt1);setComponentPopupMenu(emergent);
             //Oyentes
             //Botones
-            JButton boton6 = new JButton("future");
+            //JButton boton6 = new JButton("future");
             JButton boton7 = new JButton(new ImageIcon("src/main/java/org/beast/addpersonalb/ico/SEGREDO.jpg"));
-            JButton boton8 = new JButton("execute");
+            JButton boton8 = new JButton(new ImageIcon("src/main/java/org/beast/addpersonalb/ico/log1n.jpg"));
             boton5 = new JButton("close");
             //AÑADIR BOTONES
-            add(boton5);boton5.setBounds(506, 220, 85, 20);
+            //add(boton5);boton5.setBounds(506, 220, 85, 20);
             //add(boton6);boton6.setBounds(506, 145, 85, 20);
             add(boton7);boton7.setBounds(576, 306, 20, 20);
-            add(boton8);boton8.setBounds(506, 170, 85, 20);
+            add(boton8);boton8.setBounds(496, 170, 100, 28);
             //añadir botones y oyente
             //boton6.addActionListener(new futureButtonListener());
             boton7.addActionListener(new personalButtonListener());
@@ -91,29 +91,33 @@ public class guiPrincipal extends JFrame {
         private class chatButtonListener implements ActionListener {
 
             public void actionPerformed(ActionEvent e) {
-                guiLoginFrame letteraFrameBTN = new guiLoginFrame(boton5);
+                guiLoginFrame letteraFrameBTN = new guiLoginFrame(); // de parametro pasar a futuro el boton 5
                 letteraFrameBTN.setVisible(true);
+                letteraFrameBTN.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
             }
         }
         //#2 mensaxe
         private class personalButtonListener implements ActionListener {
 
             public void actionPerformed(ActionEvent e) {
-                guiPersonalSharing personalFrameBTN = new guiPersonalSharing(boton5);
+                guiPersonalSharing personalFrameBTN = new guiPersonalSharing();//de parametro pasar a futuro el boton 5
                 personalFrameBTN.setVisible(true);
                 personalFrameBTN.setResizable(false);
+                personalFrameBTN.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
             }
         }
         //#3  futuro
         private class futureButtonListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
-                guiMethods methodFrame = new guiMethods(boton5);
+                guiMethods methodFrame = new guiMethods();//de parametro pasar a futuro el boton 5
                 methodFrame.setVisible(true);
                 methodFrame.setResizable(false);
+                methodFrame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
             }
         }
 
                 //                               El boton de la salvación:
                                                     JButton boton5;
+                //Ahora inutil... No recuerdo bien por qué lo puse en primer lugar...
     }
 }

@@ -7,14 +7,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class guiMethods extends JFrame {
-    public guiMethods(JButton closeButton) {
+    public guiMethods() {
         setBounds(560,320, 450, 300);
         setLocationRelativeTo(this);
 
         methods pane = new methods();
         add(pane);
         closeActio closeListener = new closeActio();
-        closeButton.addActionListener(closeListener);
+        //closeButton.addActionListener(closeListener);
     }
 
     private class closeActio implements ActionListener {
