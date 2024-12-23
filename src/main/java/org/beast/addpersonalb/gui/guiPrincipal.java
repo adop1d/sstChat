@@ -26,7 +26,7 @@ public class guiPrincipal extends JFrame {
             addMouseMotionListener(new actioMur());
 
             setLayout(null);//No se, pq no?
-            setBackground(new Color(60, 60, 62));//para cambiar el color a la monda esta q está muy trite
+            setBackground(new Color(70, 70, 70));//para cambiar el color a la monda esta q está muy trite
             JMenuBar barr= getMenus();
             add(barr);
             JPopupMenu emergent = new JPopupMenu();

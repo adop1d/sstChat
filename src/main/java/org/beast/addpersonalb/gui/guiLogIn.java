@@ -63,8 +63,8 @@ class loginPanel extends JPanel{
 
         textFieldLog.setBounds(90,20,130,30);
         passKey.setBounds(90,48,130,30);
-        resultant.setBounds(80,90,180,40);
-        sendButton.setBounds(90,125,80,28);
+        resultant.setBounds(80,80,180,40);
+        sendButton.setBounds(95,120,80,28);
 
         textFieldLog.setForeground(new Color(200,200,200));
         passKey.setForeground(new Color(200,200,200));
