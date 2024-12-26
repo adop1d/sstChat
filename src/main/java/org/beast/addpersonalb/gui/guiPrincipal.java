@@ -73,6 +73,7 @@ public class guiPrincipal extends JFrame {
         }
         private Image imagen;
 
+        //Lo dejé de usar por que lo consideré muy feo y ya, lo dejo de ejemplo
         private JMenuBar getMenus() {
             JMenu menuArch = new JMenu("File");
             JMenu menuPref = new JMenu("Preferences");
