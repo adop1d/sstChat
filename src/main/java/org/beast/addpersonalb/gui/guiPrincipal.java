@@ -14,7 +14,7 @@ import java.io.IOException;
 public class guiPrincipal extends JFrame {
     public guiPrincipal() {
         Principal panelGui = new Principal();
-        setBounds(600,280,600,408);
+        setBounds(600,280,600,364);
         setLocationRelativeTo(this);
         setResizable(false);
         add(panelGui);
