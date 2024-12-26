@@ -27,11 +27,18 @@ public class guiPrincipal extends JFrame {
 
             setLayout(null);//No se, pq no?
             setBackground(new Color(70, 70, 70));//para cambiar el color a la monda esta q está muy trite
-            JMenuBar barr= getMenus();
-            add(barr);
             JPopupMenu emergent = new JPopupMenu();
             JMenuItem opt1 = new JMenuItem("reload");
-            emergent.add(opt1);setComponentPopupMenu(emergent);
+            JMenuItem opt2 = new JMenuItem("bermelho");
+            JMenuItem opt3 = new JMenuItem("blu");
+            opt1.addActionListener(new actioColor("Gris ", new ImageIcon("src/main/java/org/beast/addpersonalb/ico/Icono.jpg"), new Color(70, 70, 70),Principal.this));
+            opt2.addActionListener(new actioColor("Bermejo ", new ImageIcon("src/main/java/org/beast/addpersonalb/ico/Icono.jpg"), new Color(103, 19, 27),Principal.this));
+            opt3.addActionListener(new actioColor("Celeste grisaceo ", new ImageIcon("src/main/java/org/beast/addpersonalb/ico/Icono.jpg"), new Color(19, 78, 102),Principal.this));
+            emergent.add(opt1);
+            emergent.add(opt2);
+            emergent.add(opt3);
+            setComponentPopupMenu(emergent);
+
             //Oyentes
             //Botones
             //JButton boton6 = new JButton("future");
