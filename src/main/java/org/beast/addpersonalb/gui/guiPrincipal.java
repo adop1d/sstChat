@@ -49,7 +49,7 @@ public class guiPrincipal extends JFrame {
             //add(boton5);boton5.setBounds(506, 220, 85, 20);
             //add(boton6);boton6.setBounds(506, 145, 85, 20);
             add(boton7);boton7.setBounds(576, 306, 20, 20);
-            add(boton8);boton8.setBounds(496, 170, 100, 28);
+            add(boton8);boton8.setBounds(496, 140, 100, 28);
             //añadir botones y oyente
             //boton6.addActionListener(new futureButtonListener());
             boton7.addActionListener(new personalButtonListener());
